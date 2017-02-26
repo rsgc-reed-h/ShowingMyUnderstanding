@@ -21,13 +21,27 @@ let canvas = Canvas(width: 300, height: 300)
 
 let number = random(from: 0, toButNotIncluding: 2)
 
+
+if number == 1 {
+
 canvas.drawEllipse(centreX: 150, centreY: 250, width: 25, height: 50, borderWidth: 20)
 canvas.drawLine(fromX: 75, fromY: 200, toX: 225, toY: 200, lineWidth: 20)
 canvas.drawLine(fromX: 150, fromY: 105, toX: 200, toY: 0, lineWidth: 20)
 canvas.drawLine(fromX: 150, fromY: 105, toX: 100, toY: 0, lineWidth: 20)
 canvas.drawLine(fromX: 150, fromY: 100, toX: 150, toY: 200, lineWidth: 20)
 
+}
 
+if number == 0 {
+    
+    canvas.fillColor = Color.green
+    canvas.drawEllipse(centreX: 150, centreY: 250, width: 25, height: 50, borderWidth: 20)
+    canvas.drawLine(fromX: 75, fromY: 200, toX: 225, toY: 200, lineWidth: 20)
+    canvas.drawLine(fromX: 150, fromY: 105, toX: 200, toY: 0, lineWidth: 20)
+    canvas.drawLine(fromX: 150, fromY: 105, toX: 100, toY: 0, lineWidth: 20)
+    canvas.drawLine(fromX: 150, fromY: 100, toX: 150, toY: 200, lineWidth: 20)
+ 
+}
 
 
 
