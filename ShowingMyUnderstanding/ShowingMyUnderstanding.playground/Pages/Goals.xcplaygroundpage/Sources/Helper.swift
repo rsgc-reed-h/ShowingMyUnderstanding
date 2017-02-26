@@ -14,7 +14,7 @@ public func random(from : Int, toButNotIncluding : Int) -> Int {
     
     return Int(arc4random_uniform(max)) + from
     
-}
+}\
 
 open class Color {
     

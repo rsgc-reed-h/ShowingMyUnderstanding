@@ -31,21 +31,21 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below..
 //
-canvas.lineColor = Color(hue: 0, saturation: 50, brightness: 80, alpha: 100 )
+canvas.lineColor = Color(hue: 0, saturation: 50, brightness: 80, alpha: 100)
 
-canvas.drawLine(fromX: 50, fromY: 50, toX: 95, toY: 200, lineWidth: 40)
+canvas.drawLine(fromX: 50, fromY: 50, toX: 95, toY: 200, lineWidth: 65)
 
-canvas.lineColor = Color(hue: 0, saturation: 50, brightness: 80, alpha: 95 )
+canvas.lineColor = Color(hue: 0, saturation: 50, brightness: 80, alpha: 95)
 
-canvas.drawLine(fromX: 95, fromY: 200, toX: 140, toY: 50, lineWidth: 40)
+canvas.drawLine(fromX: 95, fromY: 200, toX: 140, toY: 50, lineWidth: 65)
 
-canvas.lineColor = Color(hue: 220, saturation: 50, brightness: 50, alpha: 95 )
+canvas.lineColor = Color(hue: 220, saturation: 50, brightness: 50, alpha: 95)
 
-canvas.drawLine(fromX: 140, fromY: 50, toX: 185, toY: 200, lineWidth: 40)
+canvas.drawLine(fromX: 140, fromY: 50, toX: 185, toY: 200, lineWidth: 65)
 
-canvas.lineColor = Color(hue: 220, saturation: 50, brightness: 50, alpha: 100 )
+canvas.lineColor = Color(hue: 220, saturation: 50, brightness: 50, alpha: 100)
 
-canvas.drawLine(fromX: 185, fromY: 200, toX: 230, toY: 50, lineWidth: 40)
+canvas.drawLine(fromX: 185, fromY: 200, toX: 230, toY: 50, lineWidth: 65)
 
 /*:
  ## Template code
