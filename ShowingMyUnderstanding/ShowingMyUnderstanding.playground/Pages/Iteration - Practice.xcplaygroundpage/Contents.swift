@@ -28,10 +28,22 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
-
+//
+//for y in stride(from: 300, through: 0, by: -25){
+//    for x in stride(from: 0, through: 300, by: 25){
+//     canvas.drawLine(fromX: x, fromY: y, toX: x, toY: y, lineWidth: 10)
+//    }
+//
 // Replace this comment and add your code below...
 
+for x in stride(from: 0, to: 300, by: 50){
+canvas.drawLine(fromX: x, fromY: 25, toX: 300, toY: 25, lineWidth: 10)
+}
 
+for x in stride(from: 0, to: 300, by: 50){
+    canvas.fillColor = Color.white
+    canvas.drawLine(fromX: x, fromY: 25, toX: 250, toY: 25, lineWidth: 10)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
