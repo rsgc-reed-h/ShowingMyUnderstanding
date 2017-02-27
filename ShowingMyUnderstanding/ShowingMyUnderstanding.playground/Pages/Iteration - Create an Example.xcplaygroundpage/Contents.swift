@@ -19,6 +19,36 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+
+
+
+
+
+//Drawing a mouse using loops
+for x in stride(from: 5, through: 50, by: 10){
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.black
+    canvas.drawEllipse(centreX: 125, centreY: 180, width: x, height: x)
+}
+
+for x in stride(from: 5, through: 50, by: 10){
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.black
+    canvas.drawEllipse(centreX: 175, centreY: 180, width: x, height: x)
+}
+
+for x in stride(from: 5, through: 50, by: 10){
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.black
+    canvas.drawRectangle(centreX: 150, centreY: 150, width: x, height: x)
+}
+
+
+
+
 // Replace this comment and add your code below...
 
 /*:
