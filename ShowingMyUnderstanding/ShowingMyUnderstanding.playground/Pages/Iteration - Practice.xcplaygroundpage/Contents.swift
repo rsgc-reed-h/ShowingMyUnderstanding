@@ -28,22 +28,20 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
-//
-//for y in stride(from: 300, through: 0, by: -25){
-//    for x in stride(from: 0, through: 300, by: 25){
-//     canvas.drawLine(fromX: x, fromY: y, toX: x, toY: y, lineWidth: 10)
-//    }
-//
-// Replace this comment and add your code below...
 
-for x in stride(from: 0, to: 300, by: 50){
-canvas.drawLine(fromX: x, fromY: 25, toX: 300, toY: 25, lineWidth: 10)
+for x in stride(from: 0, through: 300, by: 50) {
+    
+for y in stride(from: 50, through: 250, by: 100) {
+    canvas.drawShapesWithFill = true
+    canvas.drawShapesWithBorders = false
+    canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 25, height: 10)
+        canvas.drawRectangle(bottomLeftX: x + 25, bottomLeftY: y - 25, width: 25, height: 10)
+    }
 }
 
-for x in stride(from: 0, to: 300, by: 50){
-    canvas.fillColor = Color.white
-    canvas.drawLine(fromX: x, fromY: 25, toX: 250, toY: 25, lineWidth: 10)
-}
+ Replace this comment and add your code below...
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
