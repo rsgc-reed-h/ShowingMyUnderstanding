@@ -23,7 +23,17 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
 
+let number = random(from: 0, toButNotIncluding: 2)
 
+
+if number == 1 {
+for x in stride(from: 5, through: 50, by: 10){
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.black
+    canvas.drawEllipse(centreX: 175, centreY: 180, width: x, height: x)
+}
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
