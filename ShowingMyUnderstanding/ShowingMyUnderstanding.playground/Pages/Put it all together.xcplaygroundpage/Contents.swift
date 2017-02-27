@@ -20,35 +20,24 @@ import PlaygroundSupport
 
 
 
-//    for x in stride(from: 5, through: 50, by: 10){
-//        canvas.drawShapesWithBorders = true
-//        canvas.drawShapesWithFill = false
-//        canvas.borderColor = Color.green
-//
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+//Random
 let number = random(from: 0, toButNotIncluding: 2)
 
-
+//if the random number is equal to 1 it will activate below code
 if number == 1 {
-        canvas.lineColor = Color.purple
-        canvas.drawLine(fromX: 300, fromY: 300, toX: 170, toY: 170, lineWidth: 2)
-        canvas.lineColor = Color.green
-        canvas.drawLine(fromX: 0, fromY: 0, toX: 130, toY: 130, lineWidth: 2)
-        canvas.lineColor = Color.orange
-        canvas.drawLine(fromX: 0, fromY: 300, toX: 130, toY: 170, lineWidth: 2)
-        canvas.lineColor = Color.red
-        canvas.drawLine(fromX: 300, fromY: 0, toX: 170, toY: 130, lineWidth: 2)
         for i in stride(from: 20, through: 300, by: 2){
             canvas.drawShapesWithBorders = true
             canvas.drawShapesWithFill = false
             canvas.borderColor = Color(hue: Float(i), saturation: 100, brightness: 100, alpha: 100)
             canvas.drawRectangle(centreX: 150, centreY: 150, width: i, height: i)
         }
-        
+        //the reason I put a closing squiggly bracket above is because I do not want to confuse any variables with loops below or variables.
+    
+    //Drawing the ellipse and Rectangle
         for z in stride(from: 100, through: 125, by: -4) {
             canvas.drawShapesWithBorders = true
             canvas.drawShapesWithFill = false
@@ -60,6 +49,9 @@ if number == 1 {
         }
     }
 
+
+
+//if output of random number is 0, draw another pattern on lines and shapes.
 if number == 0 {
     canvas.lineColor = Color.green
     canvas.drawLine(fromX: 300, fromY: 300, toX: 170, toY: 170, lineWidth: 2)
@@ -69,14 +61,15 @@ if number == 0 {
      canvas.drawLine(fromX: 0, fromY: 300, toX: 130, toY: 170, lineWidth: 2)
         canvas.lineColor = Color.orange
      canvas.drawLine(fromX: 300, fromY: 0, toX: 170, toY: 130, lineWidth: 2)
-        for x in stride(from: 20, through: 100, by: 2){
+        for x in stride(from: 20, through: 100, by: 3){
             canvas.drawShapesWithBorders = true
             canvas.drawShapesWithFill = false
             canvas.borderColor = Color(hue: Float(x), saturation: 100, brightness: 100, alpha: 100)
             canvas.drawRectangle(centreX: 150, centreY: 150, width: x, height: x)
     }
-            
-    for b in stride(from: 3000, through: 125, by: -4) {
+      //the reason I put a closing squiggly bracket above is because I do not want to confuse any variables with loops below or variables.
+    
+    for b in stride(from: 125, through: 300, by: 4) {
         canvas.drawShapesWithBorders = true
         canvas.drawShapesWithFill = false
         canvas.defaultBorderWidth = 1
