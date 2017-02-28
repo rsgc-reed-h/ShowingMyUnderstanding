@@ -30,13 +30,13 @@ let canvas = Canvas(width: 300, height: 300)
 // Generate a random number
 let number = random(from: 0, toButNotIncluding: 2)
 
-// Replace this comment and add your code below...
-
-
+//If randomly generated number = 1 draw a black circle
 if number == 1{
     canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50)
 }
 
+
+//If randomly generated number = 0 draw a circle with no fill
 if number == 0{
     canvas.drawShapesWithFill = false
     canvas.drawShapesWithBorders = true

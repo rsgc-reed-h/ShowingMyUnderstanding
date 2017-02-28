@@ -22,6 +22,9 @@ let canvas = Canvas(width: 300, height: 300)
 let number = random(from: 0, toButNotIncluding: 2)
 
 
+
+//The code below shows that if the number 1 is assigned to variable 'number' draw a stick figure
+
 if number == 1 {
 
 canvas.drawEllipse(centreX: 150, centreY: 250, width: 25, height: 50, borderWidth: 20)
@@ -32,6 +35,9 @@ canvas.drawLine(fromX: 150, fromY: 100, toX: 150, toY: 200, lineWidth: 20)
 
 }
 
+
+
+//The code below shows that if the number 0 is assigned to variable 'number' draw a stick figure with a green fill in head
 if number == 0 {
     
     canvas.fillColor = Color.green

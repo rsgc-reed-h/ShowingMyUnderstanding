@@ -24,7 +24,7 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 
-
+//draws a circle with its colors from hue "200 through 120 by 1"
 for b in stride(from: 200, through: 120, by: -1) {
     canvas.drawShapesWithBorders = true
     canvas.drawShapesWithFill = false
@@ -33,7 +33,7 @@ for b in stride(from: 200, through: 120, by: -1) {
     canvas.drawEllipse(centreX: 150, centreY: 150, width: b, height: b)
 }
 
-   
+   //The H in the image 
 canvas.drawLine(fromX: 140, fromY: 125, toX: 145, toY: 175, lineWidth: 5)
 
 canvas.drawLine(fromX: 127, fromY: 150, toX: 170, toY: 150, lineWidth: 5)
